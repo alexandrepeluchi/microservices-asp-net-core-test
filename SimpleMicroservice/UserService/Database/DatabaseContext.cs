@@ -13,7 +13,7 @@ namespace UserService.Database
 
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {
-            optionsBuilder.UseSqlServer("Server=GW\\SQLEXPRESS; Database=UserMicroservice; Integrated Security=true;");
+            optionsBuilder.UseSqlServer("Server=GW\\SQLEXPRESS; Database=UserMicroservice; User ID=sa; Password=123qwe;");
         }
     }
 }
